@@ -40,46 +40,45 @@ Google Season of Docs 2020
 Objectives
 ----------
 
-1. To produce high-quality end user documentation by consolidating large
+1. To produce high-quality, versioned end user documentation by consolidating large
    amounts of information from disparate sources and re-writing
    information for clarity, consistency, and completeness. Documentation
    should be easy to understand for beginners, without being patronizing
    to tech-savvy users.
-2. To create a documentation portal using a static-site generator such
-   as Docusaurus or ReadtheDocs.
+2. To create a documentation portal using a static-site generator.
 3. To future-proof end user documentation by creating templates and
    detailed how-to instructions for future open source contributors.
 
 Areas of focus
 --------------
-1. Users often look for a quick start guide to get going as quickly as possible. 
-   While the install of ScummVM can be complex on some platforms, installing it onto Windows, Mac or Linux is not. 
-   A quickstart guide should cover this basic install, as well as how to load, add and launch a game. 
-2. New users need a comprehensive guide for installing ScummVM on any of
-   the supported platforms, especially in cases where the install is not
-   intuitive, or where the user may not have a strong technical base.
+New users often look for a quick start guide to get going as quickly as possible. While the install of ScummVM can be complex on some platforms, installing it onto a computer is not. 
 
-   The installation page should cover the following:
+The quickstart guide should cover the following:
+ - How to install ScummVM onto Windows, Mac and Linux. 
+ - How to load, add and launch a game. 
 
- - Any system requirements/prerequisites. 
- - How to download the appropriate version of ScummVM. 
- - How to install ScummVM. 
- - How to load games onto the chose platform, especially where it is not the platform the game was designed for. 
- - How to launch ScummVM, add a game, and launch a game.
+In cases where the install is not intuitive, or where the user may not have a strong technical base, the user needs a comprehensive guide for installing ScummVM on any of the supported platforms
 
- Where possible, I will use screenshots, gifs, and other visual aids to enhance understanding.
+The comprehensive installation page should cover the following:
+  - Any system requirements/prerequisites. 
+  - How to download the appropriate version of ScummVM. 
+  - How to install ScummVM. 
+  - How to load games onto the chose platform, especially where it is not the platform the game was designed for. 
+  - How to launch ScummVM, add a game, and launch a game.
 
-2. Existing users need reference documents that explain how to use
-   ScummVM.
 
-   The reference documents should cover the following:
- 
+Existing users need reference documents that explain how to use ScummVM.
+
+The reference documents should cover the following: 
  -  The Launcher interface; What each window and tab looks like as well as how they function.
  -  An explanation of the available settings, both global and game-specific.
  -  Keyboard shortcuts/hotkeys.
 
-3. Advanced users need additional behind-the-scenes options to tweak how
-   their games run, including how to report any bugs.
+Advanced users need additional behind-the-scenes options to tweak how their games run, including how to report any bugs.
+
+While our documentation will be versioned, having a Release Notes section may be     helpful to provide a summary of changes in the latest releas. This may include some areas which are currently outside the scope of this documentation, such as newly supported games or information about new engines.  
+
+Wherever possible, I will use screenshots, gifs, and other visual aids to enhance understanding.
 
 Suggested documentation structure
 ---------------------------------
@@ -87,6 +86,8 @@ Suggested documentation structure
 ::
 
    Home Page
+   |-- Getting Started
+   |   `-- Quick start guide
    |-- Installing ScummVM
    |   |-- Nintendo 3DS
    |   |-- AmigaOS
@@ -107,10 +108,13 @@ Suggested documentation structure
    |   |-- Command line options
    |   |-- Graphics
    |   `-- Music and sound
-   `-- Help
-       |-- FAQ
-       |-- Contacts
-       `-- Reporting a bug
+   |-- Help
+   |   |-- FAQ
+   |   |-- Contacts
+   |   |-- Known problems
+   |   `-- Reporting a bug
+   `-- Release Notes
+
 
 Plan of attack
 --------------

@@ -40,7 +40,7 @@ Google Season of Docs 2020
 Objectives
 ----------
 
-1. To produce high-quality end user documentation by consolidating large
+1. To produce high-quality, versioned end user documentation by consolidating large
    amounts of information from disparate sources and re-writing
    information for clarity, consistency, and completeness. Documentation
    should be easy to understand for beginners, without being patronizing
@@ -51,42 +51,43 @@ Objectives
 
 Areas of focus
 --------------
-1. Users often look for a quick start guide to get going as quickly as possible. 
-   While the install of ScummVM can be complex on some platforms, installing it onto Windows, Mac or Linux is not. 
-   A quickstart guide should cover this basic install, as well as how to load, add and launch a game. 
+New users often look for a quick start guide to get going as quickly as possible. While the install of ScummVM can be complex on some platforms, installing it onto a computer is not. 
 
-2. New users need a comprehensive guide for installing ScummVM on any of
-   the supported platforms, especially in cases where the install is not
-   intuitive, or where the user may not have a strong technical base.
+The quickstart guide should cover the following:
+ - How to install ScummVM onto Windows, Mac and Linux. 
+ - How to load, add and launch a game. 
 
-   The installation page should cover the following:
+In cases where the install is not intuitive, or where the user may not have a strong technical base, the user needs a comprehensive guide for installing ScummVM on any of the supported platforms
 
- - Any system requirements/prerequisites. 
- - How to download the appropriate version of ScummVM. 
- - How to install ScummVM. 
- - How to load games onto the chose platform, especially where it is not the platform the game was designed for. 
- - How to launch ScummVM, add a game, and launch a game.
+Each comprehensive installation page should cover the following:
+  - Any system requirements/prerequisites. 
+  - How to download the appropriate version of ScummVM. 
+  - How to install ScummVM. 
+  - How to load games onto the chose platform, especially where it is not the platform the game was designed for. 
+  - How to launch ScummVM, add a game, and launch a game.
 
- Where possible, I will use screenshots, gifs, and other visual aids to enhance understanding.
 
-2. Existing users need reference documents that explain how to use
-   ScummVM.
+Existing users need reference documents that explain how to use ScummVM.
 
-   The reference documents should cover the following:
- 
+The reference documents should cover the following: 
  -  The Launcher interface; What each window and tab looks like as well as how they function.
  -  An explanation of the available settings, both global and game-specific.
  -  Keyboard shortcuts/hotkeys.
 
-3. Advanced users need additional behind-the-scenes options to tweak how
-   their games run, including how to report any bugs.
+Advanced users need additional behind-the-scenes options to tweak how their games run, including how to report any bugs.
+
+While our documentation will be versioned, having a Release Notes section may be     helpful to provide a summary of changes in the latest releas. This may include some areas which are currently outside the scope of this documentation, such as newly supported games or information about new engines.  
+
+
 
 Suggested documentation structure
 ---------------------------------
 
 ::
 
-   Home Page
+   Landing Page
+   |-- Getting Started
+   |   `-- Quick start guide
    |-- Installing ScummVM
    |   |-- Nintendo 3DS
    |   |-- AmigaOS
@@ -107,10 +108,13 @@ Suggested documentation structure
    |   |-- Command line options
    |   |-- Graphics
    |   `-- Music and sound
-   `-- Help
-       |-- FAQ
-       |-- Contacts
-       `-- Reporting a bug
+   |-- Help
+   |   |-- FAQ
+   |   |-- Contacts
+   |   |-- Known problems
+   |   `-- Reporting a bug
+   `-- Release Notes
+
 
 Plan of attack
 --------------
@@ -138,9 +142,12 @@ mentor(s), I would like to have the work-in-progress portal accessible
 to the ScummVM community throughout the writing process, to receive
 real-time feedback and ensure nothing is missed along the way.
 
-I suggest using a style guide (such as the Google developer
-documentation style guide) to ensure consistency for this body of work,
-and all documentation moving forward.
+I suggest using a style guide, such as the Google developer
+documentation style guide, to ensure consistency for this body of work
+and for all documentation moving forward. 
+
+Wherever possible, I will use screenshots, gifs, and other visual aids to enhance understanding.
+
 
 Proposed timeline
 -----------------

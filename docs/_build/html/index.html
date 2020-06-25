@@ -178,60 +178,55 @@
 <div class="section" id="objectives">
 <h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><p>To produce high-quality end user documentation by consolidating large
+<li><p>To produce high-quality, versioned end user documentation by consolidating large
 amounts of information from disparate sources and re-writing
 information for clarity, consistency, and completeness. Documentation
 should be easy to understand for beginners, without being patronizing
 to tech-savvy users.</p></li>
-<li><p>To create a documentation portal using a static-site generator such
-as Docusaurus or ReadtheDocs.</p></li>
+<li><p>To create a documentation portal using a static-site generator.</p></li>
 <li><p>To future-proof end user documentation by creating templates and
 detailed how-to instructions for future open source contributors.</p></li>
 </ol>
 </div>
 <div class="section" id="areas-of-focus">
 <h2>Areas of focus<a class="headerlink" href="#areas-of-focus" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p>Users often look for a quick start guide to get going as quickly as possible.
-While the install of ScummVM can be complex on some platforms, installing it onto Windows, Mac or Linux is not.
-A quickstart guide should cover this basic install, as well as how to load, add and launch a game.</p></li>
-<li><p>New users need a comprehensive guide for installing ScummVM on any of
-the supported platforms, especially in cases where the install is not
-intuitive, or where the user may not have a strong technical base.</p>
-<p>The installation page should cover the following:</p>
-</li>
-</ol>
-<blockquote>
-<div><ul class="simple">
+<p>New users often look for a quick start guide to get going as quickly as possible. While the install of ScummVM can be complex on some platforms, installing it onto a computer is not.</p>
+<dl class="simple">
+<dt>The quickstart guide should cover the following:</dt><dd><ul class="simple">
+<li><p>How to install ScummVM onto Windows, Mac and Linux.</p></li>
+<li><p>How to load, add and launch a game.</p></li>
+</ul>
+</dd>
+</dl>
+<p>In cases where the install is not intuitive, or where the user may not have a strong technical base, the user needs a comprehensive guide for installing ScummVM on any of the supported platforms</p>
+<dl class="simple">
+<dt>The comprehensive installation page should cover the following:</dt><dd><ul class="simple">
 <li><p>Any system requirements/prerequisites.</p></li>
 <li><p>How to download the appropriate version of ScummVM.</p></li>
 <li><p>How to install ScummVM.</p></li>
 <li><p>How to load games onto the chose platform, especially where it is not the platform the game was designed for.</p></li>
 <li><p>How to launch ScummVM, add a game, and launch a game.</p></li>
 </ul>
-<p>Where possible, I will use screenshots, gifs, and other visual aids to enhance understanding.</p>
-</div></blockquote>
-<ol class="arabic" start="2">
-<li><p>Existing users need reference documents that explain how to use
-ScummVM.</p>
-<p>The reference documents should cover the following:</p>
-</li>
-</ol>
-<blockquote>
-<div><ul class="simple">
+</dd>
+</dl>
+<p>Existing users need reference documents that explain how to use ScummVM.</p>
+<dl class="simple">
+<dt>The reference documents should cover the following:</dt><dd><ul class="simple">
 <li><p>The Launcher interface; What each window and tab looks like as well as how they function.</p></li>
 <li><p>An explanation of the available settings, both global and game-specific.</p></li>
 <li><p>Keyboard shortcuts/hotkeys.</p></li>
 </ul>
-</div></blockquote>
-<ol class="arabic simple" start="3">
-<li><p>Advanced users need additional behind-the-scenes options to tweak how
-their games run, including how to report any bugs.</p></li>
-</ol>
+</dd>
+</dl>
+<p>Advanced users need additional behind-the-scenes options to tweak how their games run, including how to report any bugs.</p>
+<p>While our documentation will be versioned, having a Release Notes section may be     helpful to provide a summary of changes in the latest releas. This may include some areas which are currently outside the scope of this documentation, such as newly supported games or information about new engines.</p>
+<p>Wherever possible, I will use screenshots, gifs, and other visual aids to enhance understanding.</p>
 </div>
 <div class="section" id="suggested-documentation-structure">
 <h2>Suggested documentation structure<a class="headerlink" href="#suggested-documentation-structure" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Home Page
+|-- Getting Started
+|   `-- Quick start guide
 |-- Installing ScummVM
 |   |-- Nintendo 3DS
 |   |-- AmigaOS
@@ -252,10 +247,12 @@ their games run, including how to report any bugs.</p></li>
 |   |-- Command line options
 |   |-- Graphics
 |   `-- Music and sound
-`-- Help
-    |-- FAQ
-    |-- Contacts
-    `-- Reporting a bug
+|-- Help
+|   |-- FAQ
+|   |-- Contacts
+|   |-- Known problems
+|   `-- Reporting a bug
+`-- Release Notes
 </pre></div>
 </div>
 </div>
