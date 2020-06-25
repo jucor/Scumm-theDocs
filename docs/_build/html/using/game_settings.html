@@ -102,10 +102,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="global_settings.html">Global settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">id: keyboard
-title: Keyboard shortcuts
-sidebar_label: Keyboard shortcuts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="launcher.html">Using index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="launcher.html">The Launcher</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Advanced Options</span></p>
 <ul>
@@ -163,7 +161,7 @@ sidebar_label: Keyboard shortcuts</a></li>
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/using/game_settings.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/using/game_settings.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -178,74 +176,363 @@ sidebar_label: Keyboard shortcuts</a></li>
             
   <div class="section" id="game-settings">
 <h1>Game settings<a class="headerlink" href="#game-settings" title="Permalink to this headline">¶</a></h1>
-<p>Each game can be configured to run using settings other than the <a class="reference external" href="using/global_settings">global settings</a>.</p>
-<p>To open the game settings window, highlight a game in the main Launcher window, and click on <strong>Edit Game</strong>.   This window also opens any time a game is added to the Launcher.</p>
+<p>Each game can be configured to run using settings other than the <a class="reference internal" href="global_settings.html"><span class="doc">Global settings</span></a></p>
+<p>To open the game settings window, highlight a game in the main Launcher
+window, and click on <strong>Edit Game</strong>. This window also opens any time a
+game is added to the Launcher.</p>
 <p>There are many settings, and they are separated into tabs:</p>
 <div class="section" id="game-tab">
 <h2>Game tab<a class="headerlink" href="#game-tab" title="Permalink to this headline">¶</a></h2>
-<p>Use the game tab to display and change information about how the game is identified by ScummVM.</p>
-<p>|Control	|Description|
-|-|-|
-|ID|	Shows the short name of the game. This ID can be used for launching the game from the command line.|
-|Name	|This field shows the full title of the game, as well as some basic information such as original platform and language.|
-|Language|	This option is only applicable to Maniac Mansion, Zak McKracken, The Dig, The Curse of Monkey Island, Beneath a Steel Sky, Broken Sword 1, and Simon the Sorcerer 1 and 2. With the exception of Beneath a Steel Sky, Broken Sword 1, and multilanguage versions of Goblins games and Nippon Safes Inc., using this option does not change the language of the game, which is usually hardcoded, but rather is only used to select the appropriate font. For example, for a German version of a game, a font with umlauts. The Dig and The Curse of Monkey Island are another exception: the non-English versions of these games can be set to English, which only affect the language of subtitles. The game speech will remain the same.|
-|Platform	|Specify the original platform of the game.|</p>
+<p>Use the game tab to display and change information about how the game is
+identified by ScummVM.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Control</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ID</p></td>
+<td><p>Shows the short name of the game.
+This ID can be used for launching
+the game from the command line.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Name</p></td>
+<td><p>This field shows the full title
+of the game, as well as some
+basic information such as
+original platform and language.</p></td>
+</tr>
+<tr class="row-even"><td><p>Language</p></td>
+<td><p>This option is only applicable to
+Maniac Mansion, Zak McKracken,
+The Dig, The Curse of Monkey
+Island, Beneath a Steel Sky,
+Broken Sword 1, and Simon the
+Sorcerer 1 and 2. With the
+exception of Beneath a Steel Sky,
+Broken Sword 1, and multilanguage
+versions of Goblins games and
+Nippon Safes Inc., using this
+option does not change the
+language of the game, which is
+usually hardcoded, but rather is
+only used to select the
+appropriate font. For example,
+for a German version of a game, a
+font with umlauts. The Dig and
+The Curse of Monkey Island are
+another exception: the
+non-English versions of these
+games can be set to English,
+which only affect the language of
+subtitles. The game speech will
+remain the same.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Platform</p></td>
+<td><p>Specify the original platform of
+the game.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="graphics-tab">
 <h2>Graphics tab<a class="headerlink" href="#graphics-tab" title="Permalink to this headline">¶</a></h2>
 <p>Use the graphics tab to change how the game looks when it is played.</p>
-<p>|Control	|Description|
-|-|-|
-|Override global graphic settings|	Check this box to make the game use custom settings instead of global settings.|
-|Graphics mode	|Changes the graphic filter the game uses. This option has to be used to enable a graphic filter for a game with an original resolution higher than 320x200 or 320x240, because the corresponding global settings does not apply. See the <a class="reference external" href="page">Graphic filters</a> page|
-|Render mode	| Changes the render mode the game uses. See the <a class="reference external" href="page">Render Modes</a> page.|
-|Aspect ratio correction|	Most games supported by ScummVM were designed to be played at a screen resolution of 320x200 using rectangular pixels (higher than they were wide). Most modern systems use square pixels, which means that the image appears to be squeezed vertically and the characters look wider and shorter than they should. If this option is checked, ScummVM corrects for this by stretching the game window to a resolution of 320x240, which looks the same as 320x200 on old monitors. As with Graphic filters, this takes a little processing power to achieve. Aspect ratio correction can be combined with a Graphic filter. |
-|Fullscreen mode|	Switches between playing games in a window, or playing them in fullscreen mode. Switch between the two by using <code class="docutils literal notranslate"><span class="pre">Alt+F5</span></code> while in a game.|</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Control</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Override global graphic settings</p></td>
+<td><p>Check this box to make the game
+use custom settings instead of
+global settings.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Graphics mode</p></td>
+<td><p>Changes the graphic filter the
+game uses. This option has to be
+used to enable a graphic filter
+for a game with an original
+resolution higher than 320x200 or
+320x240, because the
+corresponding global settings
+does not apply. See the graphic
+filters page</p></td>
+</tr>
+<tr class="row-even"><td><p>Render mode</p></td>
+<td><p>Changes the render mode the game
+uses. See the <a class="reference external" href="page">Render
+Modes</a> page.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Aspect ratio correction</p></td>
+<td><p>Most games supported by ScummVM
+were designed to be played at a
+screen resolution of 320x200
+using rectangular pixels (higher
+than they were wide). Most modern
+systems use square pixels, which
+means that the image appears to
+be squeezed vertically and the
+characters look wider and shorter
+than they should. If this option
+is checked, ScummVM corrects for
+this by stretching the game
+window to a resolution of
+320x240, which looks the same as
+320x200 on old monitors. As with
+Graphic filters, this takes a
+little processing power to
+achieve. Aspect ratio correction
+can be combined with a Graphic
+filter.</p></td>
+</tr>
+<tr class="row-even"><td><p>Fullscreen mode</p></td>
+<td><p>Switches between playing games in
+a window, or playing them in
+fullscreen mode. Switch between
+the two by using <code class="docutils literal notranslate"><span class="pre">Alt+F5</span></code> while
+in a game.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="audio-tab">
 <h2>Audio tab<a class="headerlink" href="#audio-tab" title="Permalink to this headline">¶</a></h2>
 <p>Use the audio tab to change the sound output in the game.</p>
-<p>For more information about any of the audio settings, see the <a class="reference external" href="page">Music and sound</a> page.</p>
-<p>|Control	|Description|
-|-|-|
-|Override global audio settings|	Check this box to make the game use custom settings instead of the global settings.|
-|Music driver	|The method ScummVM uses to output MIDI music. For more details, see the section on music drivers.|
-|AdLib Emulator	|The emulator used by ScummVM to generate the music when the AdLib music driver is selected. Two emulators are currently available: MAME OPL emulator was the emulator that was used up to version 0.13.1, and the DOSBox OPL emulator has been added but is still experimental.|
-|Output rate	|The sample rate at which ScummVM plays sounds, including music if using an emulation music driver such as the AdLib music driver. |
-|Text and Speech	|For games with digitized speech, setting allows the user to decide whether to play the game with speech and without any subtitles, or with subtitles displaying the words spoken in the digitized speech but not the speech, or with both.|
-|Subtitle speed	|Adjusts the length of time that the subtitles are displayed on screen: the lower the speed is set, the longer the subtitles are displayed.|</p>
+<p>For more information about any of the audio settings, see the <a class="reference external" href="page">Music and
+sound</a> page.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Control</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Override global audio settings</p></td>
+<td><p>Check this box to make the game
+use custom settings instead of
+the global settings.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Music driver</p></td>
+<td><p>The method ScummVM uses to output
+MIDI music. For more details, see
+the section on music drivers.</p></td>
+</tr>
+<tr class="row-even"><td><p>AdLib Emulator</p></td>
+<td><p>The emulator used by ScummVM to
+generate the music when the AdLib
+music driver is selected. Two
+emulators are currently
+available: MAME OPL emulator was
+the emulator that was used up to
+version 0.13.1, and the DOSBox
+OPL emulator has been added but
+is still experimental.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Output rate</p></td>
+<td><p>The sample rate at which ScummVM
+plays sounds, including music if
+using an emulation music driver
+such as the AdLib music driver.</p></td>
+</tr>
+<tr class="row-even"><td><p>Text and Speech</p></td>
+<td><p>For games with digitized speech,
+setting allows the user to decide
+whether to play the game with
+speech and without any subtitles,
+or with subtitles displaying the
+words spoken in the digitized
+speech but not the speech, or
+with both.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Subtitle speed</p></td>
+<td><p>Adjusts the length of time that
+the subtitles are displayed on
+screen: the lower the speed is
+set, the longer the subtitles are
+displayed.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="volume-tab">
 <h2>Volume tab<a class="headerlink" href="#volume-tab" title="Permalink to this headline">¶</a></h2>
-<p>Use the volume tab to set the relative volumes for various sounds in the game.</p>
-<p>|Control	|Description|
-|-|-|
-|Override global volume settings|	Check this box to make the game use custom settings instead of the global ones.|
-|Music volume	|Adjusts the volume of the music played back in the game. This is usually MIDI music played back with one of the music drivers, but some games use digitized music.|
-|SFX volume	|Adjusts the volume of the sound effects within the game.|
-|Speech volume	|Adjusts the volume of the digitized speech in the game, if it has any.|
-|Mute All	|Mutes all sounds.|</p>
+<p>Use the volume tab to set the relative volumes for various sounds in the
+game.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Control</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Override global volume settings</p></td>
+<td><p>Check this box to make the game
+use custom settings instead of
+the global ones.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Music volume</p></td>
+<td><p>Adjusts the volume of the music
+played back in the game. This is
+usually MIDI music played back
+with one of the music drivers,
+but some games use digitized
+music.</p></td>
+</tr>
+<tr class="row-even"><td><p>SFX volume</p></td>
+<td><p>Adjusts the volume of the sound
+effects within the game.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Speech volume</p></td>
+<td><p>Adjusts the volume of the
+digitized speech in the game, if
+it has any.</p></td>
+</tr>
+<tr class="row-even"><td><p>Mute All</p></td>
+<td><p>Mutes all sounds.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="midi-tab">
 <h2>MIDI tab<a class="headerlink" href="#midi-tab" title="Permalink to this headline">¶</a></h2>
 <p>Use the MIDI tab to change settings about the MIDI music in the game.</p>
-<p>|Control	|Description|
-|-|-|
-|Override global MIDI settings	|Check this box to make the game use custom settings instead of the global settings.|
-|Soundfont	|Some music drivers require you to provide them with a Soundfont, which contains samples of instruments for the device to play back. This setting allows you to choose one.|
-|Mixed AdLib/MIDI mode	|Some games contain sound effects that are exclusive to the AdLib soundtrack. For these games, you may wish to use this mode in order to combine MIDI music with AdLib sound effects.
-|True Roland MT-32 (disable GM emulation)	|ScummVM will treat your device as a real MT-32. Because the instrument mappings and system exclusive commands of the MT-32 vary from those of General MIDI devices, you should only enable this option if you are using an actual Roland MT-32, LAPC-I, CM-64, CM-32L, CM-500, or GS device with an MT-32 map.|
-|Enable Roland GS Mode	|ScummVM will initialize your GS-compatible device with settings that mimic the MT-32’s reverb, (lack of) chorus, pitch bend sensitivity, etc. If it is specified in conjunction with True Roland MT-32 (above), ScummVM will select the MT-32-compatible map and drumset on your GS device. This setting works better than default GM or GS emulation with games that do not have custom instrument mappings (Loom and The Secret of Monkey Island). You should only specify both settings if you are using a GS device that has an MT-32 map, e.g. SC-55, SC-88, SC-8820, etc. Please note that Roland GS Mode is automatically disabled in both Day of the Tentacle and Sam &amp; Max Hit the Road, since they use General MIDI natively. If neither of the above settings is enabled, ScummVM will initialize your device in General MIDI mode and use GM emulation in games with MT-32 soundtracks.|
-|MIDI gain	|Adjusts the relative volume of the general MIDI music. This is only supported by some of the music drivers.|</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Control</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Override global MIDI settings</p></td>
+<td><p>Check this box to make the game
+use custom settings instead of
+the global settings.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Soundfont</p></td>
+<td><p>Some music drivers require you to
+provide them with a Soundfont,
+which contains samples of
+instruments for the device to
+play back. This setting allows
+you to choose one.</p></td>
+</tr>
+<tr class="row-even"><td><p>Mixed AdLib/MIDI mode</p></td>
+<td><p>Some games contain sound effects
+that are exclusive to the AdLib
+soundtrack. For these games, you
+may wish to use this mode in
+order to combine MIDI music with
+AdLib sound effects.</p></td>
+</tr>
+<tr class="row-odd"><td><p>True Roland MT-32 (disable GM
+emulation)</p></td>
+<td><p>ScummVM will treat your device as
+a real MT-32. Because the
+instrument mappings and system
+exclusive commands of the MT-32
+vary from those of General MIDI
+devices, you should only enable
+this option if you are using an
+actual Roland MT-32, LAPC-I,
+CM-64, CM-32L, CM-500, or GS
+device with an MT-32 map.</p></td>
+</tr>
+<tr class="row-even"><td><p>Enable Roland GS Mode</p></td>
+<td><p>ScummVM will initialize your
+GS-compatible device with
+settings that mimic the MT-32’s
+reverb, (lack of) chorus, pitch
+bend sensitivity, etc. If it is
+specified in conjunction with
+True Roland MT-32 (above),
+ScummVM will select the
+MT-32-compatible map and drumset
+on your GS device. This setting
+works better than default GM or
+GS emulation with games that do
+not have custom instrument
+mappings (Loom and The Secret of
+Monkey Island). You should only
+specify both settings if you are
+using a GS device that has an
+MT-32 map, e.g. SC-55, SC-88,
+SC-8820, etc. Please note that
+Roland GS Mode is automatically
+disabled in both Day of the
+Tentacle and Sam &amp; Max Hit the
+Road, since they use General MIDI
+natively. If neither of the above
+settings is enabled, ScummVM will
+initialize your device in General
+MIDI mode and use GM emulation in
+games with MT-32 soundtracks.</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIDI gain</p></td>
+<td><p>Adjusts the relative volume of
+the general MIDI music. This is
+only supported by some of the
+music drivers.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="paths-tab">
 <h2>Paths tab<a class="headerlink" href="#paths-tab" title="Permalink to this headline">¶</a></h2>
-<p>Use the paths tab to tell ScummVM where to look for particular files of the game.</p>
-<p>|Control	|Description|
-|-|-|
-|Save Path	|The folder in which ScummVM will store the game’s saved games. If this is not set, the saved games will be stored in the default directory.|
-|Extra Path	|This is the folder that ScummVM will look in for various extra files. These could include one or more of:<ul><li>Additional datafiles required for certain games (e.g. kyra.dat)</li><li>Soundfonts (see MIDI tab)</li><li>MT-32 ROMs (see MT-32 emulation)</li></ul>|
-|Game Path|	The folder in which the game’s data files are stored.|</p>
+<p>Use the paths tab to tell ScummVM where to look for particular files of
+the game.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Control</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Save Path</p></td>
+<td><p>The folder in which ScummVM will
+store the game’s saved games. If
+this is not set, the saved games
+will be stored in the default
+directory.</p></td>
+</tr>
+</tbody>
+</table>
+<p>|Extra Path |This is the folder that ScummVM will look in for various
+extra files. These could include one or more of:</p>
+<ul><li><p>Additional datafiles required for certain games (e.g. kyra.dat)</p>
+</li><li><p>Soundfonts (see MIDI tab)</p>
+</li><li><p>MT-32 ROMs (see MT-32 emulation)</p>
+</li></ul><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>|Game Path| The folder in which the game’s data files are stored.|</p>
 </div>
 </div>
 

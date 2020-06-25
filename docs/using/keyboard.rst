@@ -1,4 +1,6 @@
-# Keyboard Shortcuts
+===================
+Keyboard Shortcuts
+===================
 
 ScummVM supports various in-game keyboard shortcuts. 
 
@@ -9,6 +11,7 @@ ScummVM supports various in-game keyboard shortcuts.
 
 
 Common::
+
     Ctrl+F5                - Displays the Global Menu
     Cmd+q                  - Quit (Mac OS X)
     Ctrl+q                 - Quit (other unices including Linux)
@@ -32,7 +35,7 @@ Common::
                              This can also be triggered by a long press
                              of the middle mouse button or wheel.
 
-  SCUMM games:
+SCUMM games::
     Alt+x                  - Quit
     Ctrl 0-9 and Alt 0-9   - Load and save game state
     Ctrl+d                 - Starts the debugger
@@ -53,7 +56,8 @@ Common::
     Enter                  - Simulate left mouse button press
     Tab                    - Simulate right mouse button press
 
-  Beneath a Steel Sky:
+Beneath a Steel Sky::
+
     Ctrl+d                 - Starts the debugger
     Ctrl+f                 - Toggle fast mode
     Ctrl+g                 - Runs in really REALLY fast mode
@@ -61,7 +65,8 @@ Common::
     Escape                 - Skips the game intro
     Period (.)             - Skips current line of text
 
-  Blade Runner:
+Blade Runner::
+
     Ctrl+d                 - Starts the debugger
     Space                  - Toggle combat mode
     Enter or Escape        - Skips a video or a line of dialogue
@@ -75,15 +80,17 @@ Common::
     F6                     - Clue database
     F10                    - Quit game
 
-  Broken Sword:
+Broken Sword::
+
     F5 or Escape           - Displays save/load box
 
-  Broken Sword II:
+Broken Sword II::
+
     Ctrl+d                 - Starts the debugger
     Ctrl+f                 - Toggle fast mode
     p                      - Pauses
 
-  Dragon History:
+Dragon History::
     F5                     - Displays the Global Menu
     left click             - Walk, explore
     right click            - Use, talk
@@ -93,7 +100,8 @@ Common::
     any click              - Skip the currently dubbed sentence
     q                      - Quick walking on/off
 
-  Flight of the Amazon Queen:
+Flight of the Amazon Queen::
+
     Ctrl+d                 - Starts the debugger
     Ctrl+f                 - Toggle fast mode
     F1                     - Use Journal (saving/loading)
@@ -102,7 +110,7 @@ Common::
     Escape                 - Skips cutscenes
     Space                  - Skips current line of text
 
-  Future Wars:
+Future Wars::
     F1                     - Examine
     F2                     - Take
     F3                     - Inventory
@@ -113,20 +121,21 @@ Common::
     F10                    - "Use" menu
     Escape                 - Bring on command menu
 
-  Indiana Jones and the Fate of Atlantis:
+Indiana Jones and the Fate of Atlantis::
 
     i                      - Displays IQ points
 
-  Indiana Jones and the Last Crusade:
+Indiana Jones and the Last Crusade::
 
     i                      - Displays IQ points
 
-  Nippon Safes:
+Nippon Safes::
+
     Ctrl+d                 - Starts the debugger
     l                      - Load game
     s                      - Save game
 
-  Simon the Sorcerer 1 and 2:
+Simon the Sorcerer 1 and 2::
     Ctrl 0-9 and Alt 0-9   - Load and save game state
     Ctrl+d                 - Starts the debugger
     Ctrl+f                 - Toggle fast mode
@@ -149,7 +158,8 @@ Common::
                              combined speech and subtitles
                              [Simon the Sorcerer 2 CD only]
 
-  Simon the Sorcerer's Puzzle Pack:
+Simon the Sorcerer's Puzzle Pack::
+
     Ctrl+d                 - Starts the debugger
     Ctrl+f                 - Toggle fast mode
     F12                    - High speed mode on/off in Swampy Adventures
@@ -158,7 +168,8 @@ Common::
     s                      - Sound effects on/off
     Pause                  - Pauses
 
-  Starship Titanic:
+Starship Titanic::
+
     Ctrl+c                 - Open up the developer's cheat room
     Ctrl+d                 - Open up the ScummVM Debugger
     Left click             - Move action
@@ -179,7 +190,8 @@ Common::
     F6                     - Switch to Real Life
     F7                     - GMM restore menu
 
-  Starship Titanic (Starfield Puzzle):
+Starship Titanic (Starfield Puzzle)::
+
     Tab                    - Toggle between starmap and skyscape
     Mouse click:           - skyscape star selection and
                               starmap star fast travel
@@ -194,7 +206,8 @@ Common::
     l                      - starmap lock coordinate
     d                      - starmap unlock coordinate
 
-  The Feeble Files:
+The Feeble Files::
+
     Ctrl+d                 - Starts the debugger
     Ctrl+f                 - Toggle fast mode
     F7                     - Switch characters
@@ -206,14 +219,16 @@ Common::
     v                      - Switch between subtitles only and
                              combined speech and subtitles
 
-  The Legend of Kyrandia:
+The Legend of Kyrandia::
+
     Ctrl 0-9 and Alt 0-9   - Load and save game state
     Ctrl-d                 - Starts the debugger
 
-  TeenAgent
+TeenAgent::
     F5                     - Displays the Global Menu
 
-  Touche: The Adventures of the Fifth Musketeer:
+Touche: The Adventures of the Fifth Musketeer::
+
     Ctrl+f                 - Toggle fast mode
     F5                     - Displays options
     F9                     - Turn fast walk mode on
@@ -223,7 +238,7 @@ Common::
     t                      - Switch between 'Voice only',
                              'Voice and Text' and 'Text only'
 
-  Zork: Grand Inquisitor:
+Zork: Grand Inquisitor::
     Ctrl+s                 - Save
     Ctrl+r                 - Restore
     Ctrl+q                 - Quit
@@ -236,11 +251,9 @@ Common::
     F9                     - Extract coin (must have the coin bag)
     Space                  - Skips movies
 
-  Zork Nemesis: The Forbidden Lands:
+Zork Nemesis: The Forbidden Lands::
     Ctrl+s                 - Save
     Ctrl+r                 - Restore
     Ctrl+q                 - Quit
     Ctrl+p                 - Preferences
     Space                  - Skips movies
-
-````
