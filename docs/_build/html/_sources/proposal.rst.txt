@@ -1,39 +1,3 @@
-.. ScummVM Documentation documentation master file, created by
-   sphinx-quickstart on Thu Jun 18 15:35:00 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-.. toctree::
-      :glob:
-      :caption: Getting Started
-      :maxdepth: 2
-      :hidden:
-
-      quickstart/*
-
-
-.. toctree:: 
-      :caption: Installing ScummVM
-      :glob:
-      :hidden:
-
-      installation/*
-      
-.. toctree:: 
-      :caption: Using ScummVM
-      :glob:
-      :hidden:
-
-      using/game_settings
-      using/*
-
-.. toctree:: 
-      :caption: Advanced Options
-      :glob:
-      :hidden:
-
-      advanced/*
-      
 Google Season of Docs 2020
 ==========================
 
@@ -52,32 +16,30 @@ Objectives
 
 Areas of focus
 --------------
-1. Users often look for a quick start guide to get going as quickly as possible. 
-   While the install of ScummVM can be complex on some platforms, installing it onto Windows, Mac or Linux is not. 
-   A quickstart guide should cover this basic install, as well as how to load, add and launch a game. 
 
-2. New users need a comprehensive guide for installing ScummVM on any of
+1. New users need a comprehensive guide for installing ScummVM on any of
    the supported platforms, especially in cases where the install is not
    intuitive, or where the user may not have a strong technical base.
 
    The installation page should cover the following:
+      - Any system requirements/prerequisites. 
+      - How to download the appropriate version of ScummVM. 
+      - How to install ScummVM. 
+      - How to load games onto the chose platform, especially where it is not the platform the game was designed for. 
+      - How to launch ScummVM, add a game, and launch a game.
 
- - Any system requirements/prerequisites. 
- - How to download the appropriate version of ScummVM. 
- - How to install ScummVM. 
- - How to load games onto the chose platform, especially where it is not the platform the game was designed for. 
- - How to launch ScummVM, add a game, and launch a game.
-
- Where possible, I will use screenshots, gifs, and other visual aids to enhance understanding.
+   Where possible, I will use screenshots, gifs, and other visual aids to enhance understanding.
 
 2. Existing users need reference documents that explain how to use
    ScummVM.
 
-   The reference documents should cover the following:
- 
- -  The Launcher interface; What each window and tab looks like as well as how they function.
- -  An explanation of the available settings, both global and game-specific.
- -  Keyboard shortcuts/hotkeys.
+The reference documents should cover the following:
+
+-  The Launcher interface; What each window and tab looks like as well
+   how they function.
+-  An explanation of the available settings, both global and
+   game-specific.
+-  Keyboard shortcuts/hotkeys.
 
 3. Advanced users need additional behind-the-scenes options to tweak how
    their games run, including how to report any bugs.
@@ -304,6 +266,3 @@ of my writing ability.
 The Raspberry Pi installation guide was written from scratch. The other
 sections were pulled from existing documentation, but have been edited
 and rewritten as required.
-
-
-

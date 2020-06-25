@@ -72,7 +72,7 @@ Adding games to ScummVM
    :class: with-shadow
 
 
-2. In the Launcher window, click **Add Game**. This opens a file browser. To add multiple games at once, hold ```Shift``` while clicking **Add Game**.
+2. In the Launcher window, click **Add Game**. This opens a file browser. To add multiple games at once, hold :kbd:`Shift` while clicking **Add Game**.
 
 .. image:: ../images/RaspberryPi/blank_launcher_rpi.jpg
    :class: with-shadow
