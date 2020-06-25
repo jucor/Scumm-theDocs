@@ -3,19 +3,37 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ScummVM documentation!
-=================================
-
-
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+      :glob:
+      :caption: Getting Started
+      
+      quickstart/*
+
+
+.. toctree:: 
+      :caption: Installing ScummVM
+      :glob:
+      
+      installation/*
+      
+.. toctree:: 
+      :caption: Using ScummVM
+      :glob:
+
+      using/*
+
+.. toctree:: 
+      :caption: Advanced Options
+      :glob:
+
+      advanced/*
+      
 
 
 
-=====================================================
- The reStructuredText_ Cheat Sheet: Syntax Reminders
-=====================================================
+=========================================================
+ The new reStructuredText_ Cheat Sheet: Syntax Reminders
+=========================================================
 :Info: See <http://docutils.sf.net/rst.html> for introductory docs.
 :Author: David Goodger <goodger@python.org>
 :Date: $Date: 2013-02-20 02:10:53 +0100 (Mi, 20. Feb 2013) $
@@ -26,10 +44,3 @@ Welcome to ScummVM documentation!
    `<cheatsheet.txt>`_ instead to see the input syntax examples!
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

@@ -1,0 +1,459 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Command line interface &mdash; ScummVM Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The configuration file" href="configuration_file.html" />
+    <link rel="prev" title="Using index" href="../using/launcher.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> ScummVM Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/quickstart.html">Quick start guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Installing ScummVM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation/raspberrypi.html">Raspberry Pi</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using ScummVM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../using/launcher.html">Using index</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Options</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Command line interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#launching-scummvm">Launching ScummVM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#game">[GAME]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options">[OPTIONS]</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#launching-saved-games">Launching saved games</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#list-saves">–list-saves</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#save-slot-a-id-save-slot-a">–save-slot <a id="save_slot"></a></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Usage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#windows">** Windows **</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unix">** Unix **</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration_file.html">The configuration file</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ScummVM Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Command line interface</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/advanced/command_line.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="command-line-interface">
+<h1>Command line interface<a class="headerlink" href="#command-line-interface" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="launching-scummvm">
+<h2>Launching ScummVM<a class="headerlink" href="#launching-scummvm" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>scummvm <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>GAME<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="game">
+<h3>[GAME]<a class="headerlink" href="#game" title="Permalink to this headline">¶</a></h3>
+<p>[GAME] is the game id of the game you wish to launch. For example, ‘monkey’ for Monkey Island.</p>
+<p>The game id may be the default game id, or a user configured id set either directly in the game-specific section of the configuration file or in the Launcher <a class="reference external" href="using/game_settings">game settings window</a>.</p>
+</div>
+<div class="section" id="options">
+<h3>[OPTIONS]<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h3>
+<p>[OPTIONS] refers to any of the following options:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>-v, --version            Display ScummVM version information and <span class="nb">exit</span>
+-h, --help               Display a brief <span class="nb">help</span> text and <span class="nb">exit</span>
+-z, --list-games         Display list of supported games and <span class="nb">exit</span>
+-t, --list-targets       Display list of configured targets and <span class="nb">exit</span>
+--list-saves<span class="o">=</span>TARGET      Display a list of saved games <span class="k">for</span> the game <span class="o">(</span>TARGET<span class="o">)</span> specified
+-a, --add                Add all games from current or specified directory.
+                           If --game<span class="o">=</span>ID is passed only the game with id ID is added. See also --detect
+                           Use --path<span class="o">=</span>PATH before -a, --add to specify a directory.
+--detect                 Display a list of games with their ID from current or
+                           specified directory without adding it to the config.
+                           Use --path<span class="o">=</span>PATH before --detect to specify a directory.
+--game<span class="o">=</span>ID                In combination with --add or --detect only adds or attempts to
+                           detect the game with id ID.
+--auto-detect            Display a list of games from current or specified directory
+                           and start the first one. Use --path<span class="o">=</span>PATH before --auto-detect
+                           to specify a directory.
+--recursive              In combination with --add or --detect recurse down all subdirectories
+
+-c, --config<span class="o">=</span>CONFIG      Use alternate configuration file
+-p, --path<span class="o">=</span>PATH          Path to where the game is installed
+-x, --save-slot<span class="o">[=</span>NUM<span class="o">]</span>    Save game slot to load <span class="o">(</span>default: autosave<span class="o">)</span>
+-f, --fullscreen         Force full-screen mode
+-F, --no-fullscreen      Force windowed mode
+-g, --gfx-mode<span class="o">=</span>MODE      Select graphics scaler <span class="o">(</span>1x,2x,3x,2xsai,super2xsai,
+                           supereagle,advmame2x,advmame3x,hq2x,hq3x,tv2x,
+                           dotmatrix<span class="o">)</span>
+--filtering              Force filtered graphics mode
+--no-filtering           Force unfiltered graphics mode
+--gui-theme<span class="o">=</span>THEME        Select GUI theme
+--themepath<span class="o">=</span>PATH         Path to where GUI themes are stored
+--list-themes            Display list of all usable GUI themes
+-e, --music-driver<span class="o">=</span>MODE  Select music driver <span class="o">(</span>see README <span class="k">for</span> details<span class="o">)</span>
+--list-audio-devices     List all available audio devices
+-q, --language<span class="o">=</span>LANG      Select language <span class="o">(</span>en,de,fr,it,pt,es,jp,zh,kr,se,gb,
+                           hb,ru,cz<span class="o">)</span>
+-m, --music-volume<span class="o">=</span>NUM   Set the music volume, <span class="m">0</span>-255 <span class="o">(</span>default: <span class="m">192</span><span class="o">)</span>
+-s, --sfx-volume<span class="o">=</span>NUM     Set the sfx volume, <span class="m">0</span>-255 <span class="o">(</span>default: <span class="m">192</span><span class="o">)</span>
+-r, --speech-volume<span class="o">=</span>NUM  Set the speech volume, <span class="m">0</span>-255 <span class="o">(</span>default: <span class="m">192</span><span class="o">)</span>
+--midi-gain<span class="o">=</span>NUM          Set the gain <span class="k">for</span> MIDI playback, <span class="m">0</span>-1000 <span class="o">(</span>default:
+                           <span class="m">100</span><span class="o">)</span> <span class="o">(</span>only supported by some MIDI drivers<span class="o">)</span>
+-n, --subtitles          Enable subtitles <span class="o">(</span>use with games that have voice<span class="o">)</span>
+-b, --boot-param<span class="o">=</span>NUM     Pass number to the boot script <span class="o">(</span>boot param<span class="o">)</span>
+-d, --debuglevel<span class="o">=</span>NUM     Set debug verbosity level
+--debugflags<span class="o">=</span>FLAGS       Enable engine specific debug flags
+                           <span class="o">(</span>separated by commas<span class="o">)</span>
+--debug-channels-only    Show only the specified debug channels
+-u, --dump-scripts       Enable script dumping <span class="k">if</span> a directory called <span class="s1">&#39;dumps&#39;</span>
+                           exists in the current directory
+
+--cdrom<span class="o">=</span>DRIVE            CD drive to play CD audio from<span class="p">;</span> can either be a
+                           drive, path, or numeric index <span class="o">(</span>default: <span class="nv">0</span> <span class="o">=</span> best
+                           choice drive<span class="o">)</span>
+--joystick<span class="o">[=</span>NUM<span class="o">]</span>         Enable joystick input <span class="o">(</span>default: <span class="nv">0</span> <span class="o">=</span> first joystick<span class="o">)</span>
+--platform<span class="o">=</span>WORD          Specify platform of game <span class="o">(</span>allowed values: 2gs, 3do,
+                           acorn, amiga, atari, c64, fmtowns, nes, mac, pc, pc98,
+                           pce, segacd, wii, windows<span class="o">)</span>
+--savepath<span class="o">=</span>PATH          Path to where saved games are stored
+--extrapath<span class="o">=</span>PATH         Extra path to additional game data
+--soundfont<span class="o">=</span>FILE         Select the SoundFont <span class="k">for</span> MIDI playback <span class="o">(</span>only
+                           supported by some MIDI drivers<span class="o">)</span>
+--multi-midi             Enable combination AdLib and native MIDI
+--native-mt32            True Roland MT-32 <span class="o">(</span>disable GM emulation<span class="o">)</span>
+--enable-gs              Enable Roland GS mode <span class="k">for</span> MIDI playback
+--output-rate<span class="o">=</span>RATE       Select output sample rate in Hz <span class="o">(</span>e.g. <span class="m">22050</span><span class="o">)</span>
+--opl-driver<span class="o">=</span>DRIVER      Select AdLib <span class="o">(</span>OPL<span class="o">)</span> emulator <span class="o">(</span>db, mame<span class="o">)</span>
+--aspect-ratio           Enable aspect ratio correction
+--render-mode<span class="o">=</span>MODE       Enable additional render modes <span class="o">(</span>hercGreen, hercAmber,
+                           cga, ega, vga, amiga, fmtowns, pc9821, pc9801, 2gs,
+                           atari, macintosh<span class="o">)</span>
+
+--alt-intro              Use alternative intro <span class="k">for</span> CD versions of Beneath a
+                           Steel Sky and Flight of the Amazon Queen
+--copy-protection        Enable copy protection in SCUMM games, when
+                           ScummVM disables it by default.
+--talkspeed<span class="o">=</span>NUM          Set talk speed <span class="k">for</span> games <span class="o">(</span>default: <span class="m">60</span><span class="o">)</span>
+--demo-mode              Start demo mode of Maniac Mansion or The 7th Guest
+--tempo<span class="o">=</span>NUM              Set music tempo <span class="o">(</span>in percent, <span class="m">50</span>-200<span class="o">)</span> <span class="k">for</span> SCUMM games
+                           <span class="o">(</span>default: <span class="m">100</span><span class="o">)</span>
+--dimuse-tempo<span class="o">=</span>NUM       Set internal Digital iMuse tempo <span class="o">(</span><span class="m">10</span> - <span class="m">100</span><span class="o">)</span> per second
+                           <span class="o">(</span>default: <span class="m">10</span><span class="o">)</span>
+</pre></div>
+</div>
+<p>The meaning of most long options, which are those options starting with a double-dash, can be inverted by prefixing them with <code class="docutils literal notranslate"><span class="pre">no-</span></code>. For example, <code class="docutils literal notranslate"><span class="pre">--no-aspect-ratio</span></code> will turn aspect ratio correction off. This is useful if you want to override a setting in the configuration file.</p>
+</div>
+</div>
+<div class="section" id="launching-saved-games">
+<h2>Launching saved games<a class="headerlink" href="#launching-saved-games" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="list-saves">
+<h3>–list-saves<a class="headerlink" href="#list-saves" title="Permalink to this headline">¶</a></h3>
+<p>This option is used to display a list of the current saved games of the specified target game and the corresponding save slots.</p>
+<div class="section" id="id1">
+<h4>Usage<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>scummvm --list-saves<span class="o">=</span>TARGET
+</pre></div>
+</div>
+<p>Engines which currently support <code class="docutils literal notranslate"><span class="pre">--list-saves</span></code> are:</p>
+<ul class="simple">
+<li><p>AGI</p></li>
+<li><p>AGOS</p></li>
+<li><p>BLADERUNNER</p></li>
+<li><p>CGE</p></li>
+<li><p>CINE</p></li>
+<li><p>CRUISE</p></li>
+<li><p>CRYOMNI3D</p></li>
+<li><p>DRACI</p></li>
+<li><p>GROOVIE</p></li>
+<li><p>HUGO</p></li>
+<li><p>KYRA</p></li>
+<li><p>LURE</p></li>
+<li><p>MOHAWK</p></li>
+<li><p>PARALLACTION</p></li>
+<li><p>QUEEN</p></li>
+<li><p>SAGA</p></li>
+<li><p>SCI</p></li>
+<li><p>SCUMM</p></li>
+<li><p>SKY</p></li>
+<li><p>SWORD1</p></li>
+<li><p>SWORD2</p></li>
+<li><p>TEENAGENT</p></li>
+<li><p>TINSEL</p></li>
+<li><p>TITANIC</p></li>
+<li><p>TOON</p></li>
+<li><p>TOUCHE</p></li>
+<li><p>TSAGE</p></li>
+<li><p>TUCKER</p></li>
+<li><p>ZVISION</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="save-slot-a-id-save-slot-a">
+<h3>–save-slot <a id="save_slot"></a><a class="headerlink" href="#save-slot-a-id-save-slot-a" title="Permalink to this headline">¶</a></h3>
+<p>This option is used to load a saved game directly from the command line.</p>
+<div class="section" id="id2">
+<h4>Usage<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">--save-slot[SLOT]</span></code> or <code class="docutils literal notranslate"><span class="pre">-x[SLOT]</span></code>, where [SLOT] is the save slot number.</p>
+<p>Engines which currently support <code class="docutils literal notranslate"><span class="pre">--save-slot</span></code> are:</p>
+<ul class="simple">
+<li><p>AGI</p></li>
+<li><p>BLADERUNNER</p></li>
+<li><p>CGE</p></li>
+<li><p>CINE</p></li>
+<li><p>CRUISE</p></li>
+<li><p>CRYOMNI3D</p></li>
+<li><p>DRACI</p></li>
+<li><p>GROOVIE</p></li>
+<li><p>HUGO</p></li>
+<li><p>KYRA</p></li>
+<li><p>LURE</p></li>
+<li><p>MOHAWK</p></li>
+<li><p>QUEEN</p></li>
+<li><p>SAGA</p></li>
+<li><p>SCI</p></li>
+<li><p>SCUMM</p></li>
+<li><p>SKY</p></li>
+<li><p>SWORD1</p></li>
+<li><p>SWORD2</p></li>
+<li><p>TEENAGENT</p></li>
+<li><p>TINSEL</p></li>
+<li><p>TITANIC</p></li>
+<li><p>TOON</p></li>
+<li><p>TOUCHE</p></li>
+<li><p>TSAGE</p></li>
+<li><p>TUCKER</p></li>
+<li><p>ZVISION</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<!-- tabs:start --><div class="section" id="windows">
+<h3>** Windows **<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
+<p>Running Monkey Island, fullscreen, from a hard disk:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>C:<span class="se">\G</span>ames<span class="se">\L</span>ucasArts<span class="se">\s</span>cummvm.exe -f -pC:<span class="se">\G</span>ames<span class="se">\L</span>ucasArts<span class="se">\m</span>onkey<span class="se">\m</span>onkey
+</pre></div>
+</div>
+<p>Running Full Throttle from CD, fullscreen and with subtitles enabled:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>C:<span class="se">\G</span>ames<span class="se">\L</span>ucasArts<span class="se">\s</span>cummvm.exe -f -n -pD:<span class="se">\r</span>esource<span class="se">\f</span>t
+</pre></div>
+</div>
+</div>
+<div class="section" id="unix">
+<h3>** Unix **<a class="headerlink" href="#unix" title="Permalink to this headline">¶</a></h3>
+<p>Running Monkey Island, fullscreen, from a hard disk:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/path/to/scummvm -f -p/games/LucasArts/monkey/monkey 
+</pre></div>
+</div>
+<p>Running Full Throttle from CD, fullscreen and with subtitles enabled:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/path/to/scummvm -f -n -p/cdrom/resource/ft
+</pre></div>
+</div>
+<!-- tabs:end --></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="configuration_file.html" class="btn btn-neutral float-right" title="The configuration file" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../using/launcher.html" class="btn btn-neutral float-left" title="Using index" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, CadiH
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

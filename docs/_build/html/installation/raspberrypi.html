@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Raspberry Pi &mdash; ScummVM Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using index" href="../using/launcher.html" />
+    <link rel="prev" title="Quick start guide" href="../quickstart/quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> ScummVM Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/quickstart.html">Quick start guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Installing ScummVM</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Raspberry Pi</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#system-requirements">System requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-and-installing-scummvm">Downloading and installing ScummVM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loading-games-onto-the-raspberry-pi">Loading games onto the Raspberry Pi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-games-to-scummvm">Adding games to ScummVM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#launching-games">Launching games</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Using ScummVM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../using/launcher.html">Using index</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Options</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/configuration_file.html">The configuration file</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ScummVM Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Raspberry Pi</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/installation/raspberrypi.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="raspberry-pi">
+<h1>Raspberry Pi<a class="headerlink" href="#raspberry-pi" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="system-requirements">
+<h2>System requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Raspberry Pi running Raspberry Pi OS</p></li>
+<li><p>Bluetooth or wired speaker (optional)</p></li>
+</ul>
+</div>
+<div class="section" id="downloading-and-installing-scummvm">
+<h2>Downloading and installing ScummVM<a class="headerlink" href="#downloading-and-installing-scummvm" title="Permalink to this headline">¶</a></h2>
+<p>Go to the Terminal and run the following on the command line. This downloads and installs the latest Raspberry OS compatible version of ScummVM:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">scummvm</span>
+</pre></div>
+</div>
+<p>To check that ScummVM has been installed correctly, run the following on the command line. This shows the installed version:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scummvm</span> <span class="o">-</span><span class="n">v</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="loading-games-onto-the-raspberry-pi">
+<h2>Loading games onto the Raspberry Pi<a class="headerlink" href="#loading-games-onto-the-raspberry-pi" title="Permalink to this headline">¶</a></h2>
+<p>ScummVM needs access to the data files for each game. A comprehensive list of required data files for each game can be found on the <a class="reference external" href="https://wiki.scummvm.org/index.php?title=Datafiles">ScummVM Wiki Datafiles</a> page. ScummVM can run the game data files from any directory it has access to, including external media.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For ease of use, you can create a dedicated games directory into which subdirectories containing game files can be copied. The resulting directory structure will look somewhat like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>mygames
+|-- myfirstgame
+|   |-- readme.txt
+|   |-- firstgame.cpt
+|   |-- firstgame.dnr
+|   `-- firstgame.dsk
+`-- mysecondgame
+    |-- secondgame.1c
+    `-- readme.txt
+</pre></div>
+</div>
+</div>
+<p>For games on floppies or CDs:</p>
+<ul class="simple">
+<li><p>If the data files are accessible, transfer these to the Raspberry Pi.</p></li>
+<li><p>If the data files are not accessible, run the installer on the platform the game was designed for, and then transfer the files to the Raspberry Pi.</p></li>
+</ul>
+<p>For games downloaded from digital distributors such as <a class="reference external" href="gog.com">GOG.com</a>, <a class="reference external" href="https://store.steampowered.com">Steam</a>, or from various <a class="reference external" href="https://wiki.scummvm.org/index.php?title=Where_to_get_the_games#Freeware_Games">freeware sources</a> sources:</p>
+<ul class="simple">
+<li><p>Run the installer and transfer the files to the Raspberry Pi, or</p></li>
+<li><p>If the data files are supplied as a .zip file, extract the archive. Archives can be downloaded directly onto the Raspberry Pi, as there is no need to run the installer.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If data files need to be transferred from another device onto the Raspberry Pi, there are a number of options:</p>
+<ul class="simple">
+<li><p>Using external media such as a hard-drive or USB stick</p></li>
+<li><p>Using a <a class="reference external" href="https://pimylifeup.com/raspberry-pi-samba/">Samba server</a> or <a class="reference external" href="https://www.raspberrypi.org/documentation/remote-access/ftp.md">FTP</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="adding-games-to-scummvm">
+<h2>Adding games to ScummVM<a class="headerlink" href="#adding-games-to-scummvm" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>From the Applications menu, select <strong>Games &gt; ScummVM</strong> to open the Launcher window.</p></li>
+</ol>
+<img alt="../_images/launch_scummvm_rpi.jpg" class="with-shadow" src="../_images/launch_scummvm_rpi.jpg" />
+<ol class="arabic simple" start="2">
+<li><p>In the Launcher window, click <strong>Add Game</strong>. This opens a file browser. To add multiple games at once, hold <code class="docutils literal notranslate"><span class="pre">`Shift`</span></code> while clicking <strong>Add Game</strong>.</p></li>
+</ol>
+<img alt="../_images/blank_launcher_rpi.jpg" class="with-shadow" src="../_images/blank_launcher_rpi.jpg" />
+<ol class="arabic simple" start="3">
+<li><p>Use the file browser to locate the folder containing the game you wish to add. Double click on a folder to open it, and use <strong>Go up</strong> to go back up one level.</p></li>
+<li><p>Once you have selected the folder that contains the data files, click <strong>Choose</strong>.</p></li>
+</ol>
+<img alt="../_images/adding_games_rpi.jpg" class="with-shadow" src="../_images/adding_games_rpi.jpg" />
+<ol class="arabic simple" start="5">
+<li><p>A dialog opens to allow configuration of various settings for the game. These can be reconfigured at any time, but for now everything should work at the default settings. Click <strong>Ok</strong>.</p></li>
+</ol>
+<img alt="../_images/game_info_rpi.jpg" class="with-shadow" src="../_images/game_info_rpi.jpg" />
+<ol class="arabic simple" start="6">
+<li><p>Added games are now ready to launch!</p></li>
+</ol>
+</div>
+<div class="section" id="launching-games">
+<h2>Launching games<a class="headerlink" href="#launching-games" title="Permalink to this headline">¶</a></h2>
+<p>There are two ways to launch a game; from the Launcher and from the command line.</p>
+<p><strong>Launcher:</strong></p>
+<ul class="simple">
+<li><p>From the Applications menu, select <strong>Games &gt; ScummVM</strong> to start the Launcher.</p></li>
+<li><p>Select a game and click <strong>Start</strong> to play.</p></li>
+</ul>
+<img alt="../_images/launch_launcher.gif" class="with-shadow" src="../_images/launch_launcher.gif" />
+<p><strong>Command line:</strong></p>
+<ul class="simple">
+<li><p>To launch a game with no additional options, run <code class="docutils literal notranslate"><span class="pre">scummvm</span></code> followed by the game id.</p></li>
+<li><p>To launch a game with options, run <code class="docutils literal notranslate"><span class="pre">scummvm</span></code> , followed by any desired options, and then the game ID. For more information, see the [Command line options](advanced/command_line) page.</p></li>
+</ul>
+<p>In the following example, Flight of the Amazon Queen will be launched in full screen:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scummvm</span> <span class="o">-</span><span class="n">f</span> <span class="n">queen</span>
+</pre></div>
+</div>
+<img alt="../_images/launch_commandline.gif" class="with-shadow" src="../_images/launch_commandline.gif" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../using/launcher.html" class="btn btn-neutral float-right" title="Using index" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../quickstart/quickstart.html" class="btn btn-neutral float-left" title="Quick start guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, CadiH
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
