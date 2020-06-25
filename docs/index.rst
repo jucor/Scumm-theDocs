@@ -45,8 +45,7 @@ Objectives
    information for clarity, consistency, and completeness. Documentation
    should be easy to understand for beginners, without being patronizing
    to tech-savvy users.
-2. To create a documentation portal using a static-site generator such
-   as Docusaurus or ReadtheDocs.
+2. To create a documentation portal using a static-site generator.
 3. To future-proof end user documentation by creating templates and
    detailed how-to instructions for future open source contributors.
 
