@@ -49,39 +49,18 @@ Objectives
 3. To future-proof end user documentation by creating templates and
    detailed how-to instructions for future open source contributors.
 
-Areas of focus
---------------
-New users often look for a quick start guide to get going as quickly as possible. While the install of ScummVM can be complex on some platforms, installing it onto a computer is not. 
+The current situation
+----------------------
+-  The available ScummVM documentation is spread across multiple sources. 
+-  Information is hard to find and often duplicated; it's easy to get lost in obscure pages. 
+-  It's hard to know what information is current, and what is out of date. 
+-  Some information is missing or incomplete.
 
-The quickstart guide should cover the following:
- - How to install ScummVM onto Windows, Mac and Linux. 
- - How to load, add and launch a game. 
-
-In cases where the install is not intuitive, or where the user may not have a strong technical base, the user needs a comprehensive guide for installing ScummVM on any of the supported platforms
-
-Each comprehensive installation page should cover the following:
-  - Any system requirements/prerequisites. 
-  - How to download the appropriate version of ScummVM. 
-  - How to install ScummVM. 
-  - How to load games onto the chose platform, especially where it is not the platform the game was designed for. 
-  - How to launch ScummVM, add a game, and launch a game.
-
-
-Existing users need reference documents that explain how to use ScummVM.
-
-The reference documents should cover the following: 
- -  The Launcher interface; What each window and tab looks like as well as how they function.
- -  An explanation of the available settings, both global and game-specific.
- -  Keyboard shortcuts/hotkeys.
-
-Advanced users need additional behind-the-scenes options to tweak how their games run, including how to report any bugs.
-
-While our documentation will be versioned, having a Release Notes section may be     helpful to provide a summary of changes in the latest releas. This may include some areas which are currently outside the scope of this documentation, such as newly supported games or information about new engines.  
-
-
-
+Fixing the problem
+------------------
+ 
 Suggested documentation structure
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
@@ -115,18 +94,58 @@ Suggested documentation structure
    |   `-- Reporting a bug
    `-- Release Notes
 
+**Getting started**
+
+New users often look for a quick start guide to get going as quickly as possible. While the install of ScummVM can be complex on some platforms, installing it onto a computer is not. 
+
+The quickstart guide should cover the following:
+
+ - How to install ScummVM onto Windows, Mac and Linux. 
+ - How to load, add and launch a game. 
+
+**Installing ScummVM**
+
+In cases where the install is not intuitive, or where the user may not have a strong technical base, the user needs a comprehensive guide for installing ScummVM on any of the supported platforms.
+
+Each comprehensive installation page should cover the following:
+
+  - Any system requirements/prerequisites. 
+  - How to download the appropriate version of ScummVM. 
+  - How to install ScummVM. 
+  - How to load games onto the chose platform, especially where it is not the platform the game was designed for. 
+  - How to launch ScummVM, add a game, and launch a game.
+
+**Using ScummVM**
+
+Users need reference documents that explain how to use ScummVM.
+
+The reference documents should cover the following: 
+
+ -  The Launcher interface; what each window and tab looks like as well as how they function.
+ -  An explanation of the available settings, both global and game-specific.
+ -  Keyboard shortcuts/hotkeys.
+
+**Advanced options**
+
+Advanced users need additional, more technical information about the options available to them for tweaking how their games run.
+
+**Release notes**
+
+While our documentation will be versioned, having a Release Notes section may be     helpful to provide a summary of changes in the latest release. This may include some areas which are currently outside the scope of this documentation, such as newly supported games or information about new engines.  
+
+
 
 Plan of attack
---------------
+~~~~~~~~~~~~~~~~~
 
-I propose to start by creating a template for the ‘Installing ScummVM’
+I propose to start by creating a template for the **Installing ScummVM**
 pages, as that will be the easiest way for me to get the information I
 require from port maintainers/developers (especially where this
 information is scant or does not exist). I will pre-fill any information
 I already have from existing documentation, which can then be checked
 for completeness, accuracy, and currency, or added to as necessary.
 
-Next I will comb the existing documentation; readme, wiki and website.
+Next I will comb the existing documentation; README, wiki and website.
 As I go, I will re-write and add to each section as required and pull
 all the information into the new portal. I will also make note of what
 information is pulled from where, to ensure that once the portal is live

@@ -188,43 +188,20 @@ to tech-savvy users.</p></li>
 detailed how-to instructions for future open source contributors.</p></li>
 </ol>
 </div>
-<div class="section" id="areas-of-focus">
-<h2>Areas of focus<a class="headerlink" href="#areas-of-focus" title="Permalink to this headline">¶</a></h2>
-<p>New users often look for a quick start guide to get going as quickly as possible. While the install of ScummVM can be complex on some platforms, installing it onto a computer is not.</p>
-<dl class="simple">
-<dt>The quickstart guide should cover the following:</dt><dd><ul class="simple">
-<li><p>How to install ScummVM onto Windows, Mac and Linux.</p></li>
-<li><p>How to load, add and launch a game.</p></li>
+<div class="section" id="the-current-situation">
+<h2>The current situation<a class="headerlink" href="#the-current-situation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The available ScummVM documentation is spread across multiple sources.</p></li>
+<li><p>Information is hard to find and often duplicated; it’s easy to get lost in obscure pages.</p></li>
+<li><p>It’s hard to know what information is current, and what is out of date.</p></li>
+<li><p>Some information is missing or incomplete.</p></li>
 </ul>
-</dd>
-</dl>
-<p>In cases where the install is not intuitive, or where the user may not have a strong technical base, the user needs a comprehensive guide for installing ScummVM on any of the supported platforms</p>
-<dl class="simple">
-<dt>The comprehensive installation page should cover the following:</dt><dd><ul class="simple">
-<li><p>Any system requirements/prerequisites.</p></li>
-<li><p>How to download the appropriate version of ScummVM.</p></li>
-<li><p>How to install ScummVM.</p></li>
-<li><p>How to load games onto the chose platform, especially where it is not the platform the game was designed for.</p></li>
-<li><p>How to launch ScummVM, add a game, and launch a game.</p></li>
-</ul>
-</dd>
-</dl>
-<p>Existing users need reference documents that explain how to use ScummVM.</p>
-<dl class="simple">
-<dt>The reference documents should cover the following:</dt><dd><ul class="simple">
-<li><p>The Launcher interface; What each window and tab looks like as well as how they function.</p></li>
-<li><p>An explanation of the available settings, both global and game-specific.</p></li>
-<li><p>Keyboard shortcuts/hotkeys.</p></li>
-</ul>
-</dd>
-</dl>
-<p>Advanced users need additional behind-the-scenes options to tweak how their games run, including how to report any bugs.</p>
-<p>While our documentation will be versioned, having a Release Notes section may be     helpful to provide a summary of changes in the latest releas. This may include some areas which are currently outside the scope of this documentation, such as newly supported games or information about new engines.</p>
-<p>Wherever possible, I will use screenshots, gifs, and other visual aids to enhance understanding.</p>
 </div>
+<div class="section" id="fixing-the-problem">
+<h2>Fixing the problem<a class="headerlink" href="#fixing-the-problem" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="suggested-documentation-structure">
-<h2>Suggested documentation structure<a class="headerlink" href="#suggested-documentation-structure" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Home Page
+<h3>Suggested documentation structure<a class="headerlink" href="#suggested-documentation-structure" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Landing Page
 |-- Getting Started
 |   `-- Quick start guide
 |-- Installing ScummVM
@@ -255,9 +232,44 @@ detailed how-to instructions for future open source contributors.</p></li>
 `-- Release Notes
 </pre></div>
 </div>
+<p><strong>Getting started</strong></p>
+<p>New users often look for a quick start guide to get going as quickly as possible. While the install of ScummVM can be complex on some platforms, installing it onto a computer is not.</p>
+<p>The quickstart guide should cover the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>How to install ScummVM onto Windows, Mac and Linux.</p></li>
+<li><p>How to load, add and launch a game.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Installing ScummVM</strong></p>
+<p>In cases where the install is not intuitive, or where the user may not have a strong technical base, the user needs a comprehensive guide for installing ScummVM on any of the supported platforms.</p>
+<p>Each comprehensive installation page should cover the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Any system requirements/prerequisites.</p></li>
+<li><p>How to download the appropriate version of ScummVM.</p></li>
+<li><p>How to install ScummVM.</p></li>
+<li><p>How to load games onto the chose platform, especially where it is not the platform the game was designed for.</p></li>
+<li><p>How to launch ScummVM, add a game, and launch a game.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Using ScummVM</strong></p>
+<p>Users need reference documents that explain how to use ScummVM.</p>
+<p>The reference documents should cover the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The Launcher interface; what each window and tab looks like as well as how they function.</p></li>
+<li><p>An explanation of the available settings, both global and game-specific.</p></li>
+<li><p>Keyboard shortcuts/hotkeys.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Advanced options</strong></p>
+<p>Advanced users need additional, more technical information about the options available to them for tweaking how their games run.</p>
+<p><strong>Release notes</strong></p>
+<p>While our documentation will be versioned, having a Release Notes section may be     helpful to provide a summary of changes in the latest releas. This may include some areas which are currently outside the scope of this documentation, such as newly supported games or information about new engines.</p>
 </div>
 <div class="section" id="plan-of-attack">
-<h2>Plan of attack<a class="headerlink" href="#plan-of-attack" title="Permalink to this headline">¶</a></h2>
+<h3>Plan of attack<a class="headerlink" href="#plan-of-attack" title="Permalink to this headline">¶</a></h3>
 <p>I propose to start by creating a template for the ‘Installing ScummVM’
 pages, as that will be the easiest way for me to get the information I
 require from port maintainers/developers (especially where this
@@ -277,9 +289,11 @@ comprehensive as possible.</p>
 mentor(s), I would like to have the work-in-progress portal accessible
 to the ScummVM community throughout the writing process, to receive
 real-time feedback and ensure nothing is missed along the way.</p>
-<p>I suggest using a style guide (such as the Google developer
-documentation style guide) to ensure consistency for this body of work,
-and all documentation moving forward.</p>
+<p>I suggest using a style guide, such as the Google developer
+documentation style guide, to ensure consistency for this body of work
+and for all documentation moving forward.</p>
+<p>Wherever possible, I will use screenshots, gifs, and other visual aids to enhance understanding.</p>
+</div>
 </div>
 <div class="section" id="proposed-timeline">
 <h2>Proposed timeline<a class="headerlink" href="#proposed-timeline" title="Permalink to this headline">¶</a></h2>
