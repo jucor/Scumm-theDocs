@@ -35,7 +35,9 @@
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quick start guide" href="quickstart/quickstart.html" />
+    <link rel="prev" title="Welcome to ScummVM" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -80,7 +82,36 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption"><span class="caption-text">GSOD Proposal</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Google Season of Docs 2020</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#objectives">Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-current-situation">The current situation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fixing-the-problem">Fixing the problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#suggested-documentation-structure">Suggested documentation structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plan-of-attack">Plan of attack</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#proposed-timeline">Proposed timeline</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#community-bonding">Community bonding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#week-1">Week 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#week-2">Week 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#week-3">Week 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#week-4">Week 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#week-5">Week 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#week-6">Week 6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#week-7">Week 7</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#week-8">Week 8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#week-9">Week 9</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#week-10">Week 10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#week-11">Week 11</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-samples">Writing samples</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="quickstart/quickstart.html">Quick start guide</a></li>
 </ul>
@@ -169,54 +200,32 @@
 <div class="section" id="objectives">
 <h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><p>To produce high-quality end user documentation by consolidating large
+<li><p>To produce high-quality, versioned end user documentation by consolidating large
 amounts of information from disparate sources and re-writing
 information for clarity, consistency, and completeness. Documentation
 should be easy to understand for beginners, without being patronizing
 to tech-savvy users.</p></li>
-<li><p>To create a documentation portal using a static-site generator such
-as Docusaurus or ReadtheDocs.</p></li>
+<li><p>To create a documentation portal using a static-site generator.</p></li>
 <li><p>To future-proof end user documentation by creating templates and
 detailed how-to instructions for future open source contributors.</p></li>
 </ol>
 </div>
-<div class="section" id="areas-of-focus">
-<h2>Areas of focus<a class="headerlink" href="#areas-of-focus" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p>New users need a comprehensive guide for installing ScummVM on any of
-the supported platforms, especially in cases where the install is not
-intuitive, or where the user may not have a strong technical base.</p>
-<dl class="simple">
-<dt>The installation page should cover the following:</dt><dd><ul class="simple">
-<li><p>Any system requirements/prerequisites.</p></li>
-<li><p>How to download the appropriate version of ScummVM.</p></li>
-<li><p>How to install ScummVM.</p></li>
-<li><p>How to load games onto the chose platform, especially where it is not the platform the game was designed for.</p></li>
-<li><p>How to launch ScummVM, add a game, and launch a game.</p></li>
-</ul>
-</dd>
-</dl>
-<p>Where possible, I will use screenshots, gifs, and other visual aids to enhance understanding.</p>
-</li>
-<li><p>Existing users need reference documents that explain how to use
-ScummVM.</p></li>
-</ol>
-<p>The reference documents should cover the following:</p>
+<div class="section" id="the-current-situation">
+<h2>The current situation<a class="headerlink" href="#the-current-situation" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>The Launcher interface; What each window and tab looks like as well
-how they function.</p></li>
-<li><p>An explanation of the available settings, both global and
-game-specific.</p></li>
-<li><p>Keyboard shortcuts/hotkeys.</p></li>
+<li><p>The available ScummVM documentation is spread across multiple sources.</p></li>
+<li><p>Information is hard to find and often duplicated; it’s easy to get lost in obscure pages.</p></li>
+<li><p>It’s hard to know what information is current, and what is out of date.</p></li>
+<li><p>Some information is missing or incomplete.</p></li>
 </ul>
-<ol class="arabic simple" start="3">
-<li><p>Advanced users need additional behind-the-scenes options to tweak how
-their games run, including how to report any bugs.</p></li>
-</ol>
 </div>
+<div class="section" id="fixing-the-problem">
+<h2>Fixing the problem<a class="headerlink" href="#fixing-the-problem" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="suggested-documentation-structure">
-<h2>Suggested documentation structure<a class="headerlink" href="#suggested-documentation-structure" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Home Page
+<h3>Suggested documentation structure<a class="headerlink" href="#suggested-documentation-structure" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Landing Page
+|-- Getting Started
+|   `-- Quick start guide
 |-- Installing ScummVM
 |   |-- Nintendo 3DS
 |   |-- AmigaOS
@@ -237,22 +246,59 @@ their games run, including how to report any bugs.</p></li>
 |   |-- Command line options
 |   |-- Graphics
 |   `-- Music and sound
-`-- Help
-    |-- FAQ
-    |-- Contacts
-    `-- Reporting a bug
+|-- Help
+|   |-- FAQ
+|   |-- Contacts
+|   |-- Known problems
+|   `-- Reporting a bug
+`-- Release Notes
 </pre></div>
 </div>
+<p><strong>Getting started</strong></p>
+<p>New users often look for a quick start guide to get going as quickly as possible. While the install of ScummVM can be complex on some platforms, installing it onto a computer is not.</p>
+<p>The quickstart guide should cover the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>How to install ScummVM onto Windows, Mac and Linux.</p></li>
+<li><p>How to load, add and launch a game.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Installing ScummVM</strong></p>
+<p>In cases where the install is not intuitive, or where the user may not have a strong technical base, the user needs a comprehensive guide for installing ScummVM on any of the supported platforms.</p>
+<p>Each comprehensive installation page should cover the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Any system requirements/prerequisites.</p></li>
+<li><p>How to download the appropriate version of ScummVM.</p></li>
+<li><p>How to install ScummVM.</p></li>
+<li><p>How to load games onto the chose platform, especially where it is not the platform the game was designed for.</p></li>
+<li><p>How to launch ScummVM, add a game, and launch a game.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Using ScummVM</strong></p>
+<p>Users need reference documents that explain how to use ScummVM.</p>
+<p>The reference documents should cover the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The Launcher interface; what each window and tab looks like as well as how they function.</p></li>
+<li><p>An explanation of the available settings, both global and game-specific.</p></li>
+<li><p>Keyboard shortcuts/hotkeys.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Advanced options</strong></p>
+<p>Advanced users need additional, more technical information about the options available to them for tweaking how their games run.</p>
+<p><strong>Release notes</strong></p>
+<p>While our documentation will be versioned, having a Release Notes section may be     helpful to provide a summary of changes in the latest release. This may include some areas which are currently outside the scope of this documentation, such as newly supported games or information about new engines.</p>
 </div>
 <div class="section" id="plan-of-attack">
-<h2>Plan of attack<a class="headerlink" href="#plan-of-attack" title="Permalink to this headline">¶</a></h2>
-<p>I propose to start by creating a template for the ‘Installing ScummVM’
+<h3>Plan of attack<a class="headerlink" href="#plan-of-attack" title="Permalink to this headline">¶</a></h3>
+<p>I propose to start by creating a template for the <strong>Installing ScummVM</strong>
 pages, as that will be the easiest way for me to get the information I
 require from port maintainers/developers (especially where this
 information is scant or does not exist). I will pre-fill any information
 I already have from existing documentation, which can then be checked
 for completeness, accuracy, and currency, or added to as necessary.</p>
-<p>Next I will comb the existing documentation; readme, wiki and website.
+<p>Next I will comb the existing documentation; README, wiki and website.
 As I go, I will re-write and add to each section as required and pull
 all the information into the new portal. I will also make note of what
 information is pulled from where, to ensure that once the portal is live
@@ -265,9 +311,11 @@ comprehensive as possible.</p>
 mentor(s), I would like to have the work-in-progress portal accessible
 to the ScummVM community throughout the writing process, to receive
 real-time feedback and ensure nothing is missed along the way.</p>
-<p>I suggest using a style guide (such as the Google developer
-documentation style guide) to ensure consistency for this body of work,
-and all documentation moving forward.</p>
+<p>I suggest using a style guide, such as the Google developer
+documentation style guide, to ensure consistency for this body of work
+and for all documentation moving forward.</p>
+<p>Wherever possible, I will use screenshots, gifs, and other visual aids to enhance understanding.</p>
+</div>
 </div>
 <div class="section" id="proposed-timeline">
 <h2>Proposed timeline<a class="headerlink" href="#proposed-timeline" title="Permalink to this headline">¶</a></h2>
@@ -457,6 +505,15 @@ and rewritten as required.</p>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="quickstart/quickstart.html" class="btn btn-neutral float-right" title="Quick start guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to ScummVM" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
