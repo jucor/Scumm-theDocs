@@ -1,7 +1,4 @@
-.. ScummVM Documentation documentation master file, created by
-   sphinx-quickstart on Thu Jun 18 15:35:00 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Dummy links to create the impression, check all before release!
 
 .. toctree::
       :caption: GSOD Proposal
@@ -56,7 +53,7 @@ First steps
 We have guides available to show you how to get your games up and running with ScummVM on many different platforms:
 
 - **Windows, Mac or Linux**: :doc:`quickstart/quickstart`
-- **Other platforms**: :doc:`installation/raspberrypi` | :doc:`installation/PSP` 
+- **Other platforms**: :doc:`installation/raspberrypi` | `PSP <#>`__ 
 
 
 How do I...?
@@ -87,9 +84,9 @@ ScummVM is still under development. While we do our best to make sure that as ma
 If you are having problems with any aspect of ScummVM, take a look at our help section. 
 
 - **Games**: `Compatibility <https://www.scummvm.org/compatibility/>`__
-- **Frequently Asked Questions**: FAQ
-- **Bugs**: Known problems in this release | Reporting a Bug 
-- **How to contact us**: Contact page 
+- **Frequently Asked Questions**: `FAQ <#>`__
+- **Bugs**: `Known problems <#>`__ | `Reporting a Bug <#>`__ 
+- **How to contact us**: `Contact page <#>`__
 
 
 The ScummVM Project
@@ -100,4 +97,4 @@ If you enjoy ScummVM, feel free to donate using the PayPal button on the `ScummV
 
 If you cannot donate but you have the skills, you can help us by contributing a patch!
 
-- **Contributing Guidelines**: Code | Documentation
+- **Contributing Guidelines**: `Code <#>`__ | `Documentation <#>`__
