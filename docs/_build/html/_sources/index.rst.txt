@@ -59,12 +59,10 @@ We have guides available to show you how to get your games up and running with S
 - **Other platforms**: :doc:`installation/raspberrypi` | :doc:`installation/PSP` 
 
 
-How to...
-==========
+How do I...?
+=============
 
-You have ScummVM installed, but you have questions about how to use it.
-
-Our Using ScummVM section has lots of useful information to help you out:
+If you have ScummVM installed, but you have questions about how to use it, our **Using ScummVM** section has lots of useful information to help you out:
 
 - **Understanding the interface**: :doc:`using/launcher`
 - **Changing settings**: :doc:`using/global_settings` | :doc:`using/game_settings` 
@@ -74,7 +72,7 @@ Our Using ScummVM section has lots of useful information to help you out:
 Advanced features 
 ============================
 
-For our more tech-savvy users, ScummVM has many cool advanced options.
+For our more experienced users, ScummVM has many cool advanced options.
 But don't worry, even if you're a beginner, our documentation will take you through how to optimize your game playing experience.
 
 -  **Advanced settings**: :doc:`advanced/configuration_file` | :doc:`advanced/render_modes` | :doc:`advanced/graphic_filters`
