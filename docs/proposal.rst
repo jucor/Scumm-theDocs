@@ -284,16 +284,3 @@ November 23 - November 30
 -  Once the portal is launched, remove redundant information from other
    sources in consultation with the mentor(s).
 
-Writing samples
----------------
-
-This prototype documentation portal shows how I intend to complete this
-project if I am selected. Its secondary purpose is to serve as a sample
-of my writing ability.
-
-The Raspberry Pi installation guide was written from scratch. The other
-sections were pulled from existing documentation, but have been edited
-and rewritten as required.
-
-
-
