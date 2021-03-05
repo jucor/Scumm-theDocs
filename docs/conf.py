@@ -60,9 +60,7 @@ html_theme = "sphinx_rtd_theme"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-
-def setup(app):
-   app.add_js_file("version.js")
+html_js_files = ['version.js']
 
 master_doc = 'index'
 html_sidebars = {'**': ['localtoc.html']}
