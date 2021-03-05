@@ -1,3 +1,3 @@
 <script>
-    document.getElementById("version").innerHTML="2.2";
+    document.getElementsByClassName("version")[0].innerHTML="2.2";
     </script>
