@@ -92,6 +92,7 @@ Broken Sword II::
     p                      - Pauses
 
 Dragon History::
+
     F5                     - Displays the Global Menu
     left click             - Walk, explore
     right click            - Use, talk
@@ -112,6 +113,7 @@ Flight of the Amazon Queen::
     Space                  - Skips current line of text
 
 Future Wars::
+
     F1                     - Examine
     F2                     - Take
     F3                     - Inventory
@@ -137,6 +139,7 @@ Nippon Safes::
     s                      - Save game
 
 Simon the Sorcerer 1 and 2::
+
     Ctrl 0-9 and Alt 0-9   - Load and save game state
     Ctrl+d                 - Starts the debugger
     Ctrl+f                 - Toggle fast mode
@@ -226,6 +229,7 @@ The Legend of Kyrandia::
     Ctrl-d                 - Starts the debugger
 
 TeenAgent::
+
     F5                     - Displays the Global Menu
 
 Touche: The Adventures of the Fifth Musketeer::
@@ -240,6 +244,7 @@ Touche: The Adventures of the Fifth Musketeer::
                              'Voice and Text' and 'Text only'
 
 Zork: Grand Inquisitor::
+
     Ctrl+s                 - Save
     Ctrl+r                 - Restore
     Ctrl+q                 - Quit
@@ -253,6 +258,7 @@ Zork: Grand Inquisitor::
     Space                  - Skips movies
 
 Zork Nemesis: The Forbidden Lands::
+
     Ctrl+s                 - Save
     Ctrl+r                 - Restore
     Ctrl+q                 - Quit
