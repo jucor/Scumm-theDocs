@@ -36,6 +36,7 @@ Common::
                              of the middle mouse button or wheel.
 
 SCUMM games::
+
     Alt+x                  - Quit
     Ctrl 0-9 and Alt 0-9   - Load and save game state
     Ctrl+d                 - Starts the debugger
